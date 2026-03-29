@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tietoa DiKistä</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      color: #222;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 24px 40px 24px;
+      box-sizing: border-box;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .logo {
+      width: 180px;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .brand-text h2 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.05;
+      font-weight: 700;
+    }
+
+    .brand-text p {
+      margin: 4px 0 0 0;
+      font-size: 22px;
+      line-height: 1.2;
+      color: #555;
+    }
+
+    .hero {
+      text-align: center;
+      margin: 18px 0 26px 0;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px 0;
+      font-size: 54px;
+      line-height: 1.05;
+      font-weight: 700;
+    }
+
+    .hero .lead {
+      margin: 0 auto;
+      max-width: 900px;
+      font-size: 24px;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-sizing: border-box;
+    }
+
+    .card h3 {
+      margin: 0 0 14px 0;
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.55;
+      color: #333;
+    }
+
+    .bottom-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 34px;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 18px 34px;
+      background-color: #3b71d8;
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      border-radius: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+    }
+
+    .back-button:hover {
+      background-color: #2d62c7;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 22px;
+      font-size: 16px;
+      color: #777;
+    }
+
+    @media (max-width: 980px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero .lead {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="topbar">
+      <img src="diki-logo.png" alt="DiKi-logo" class="logo">
+      <div class="brand-text">
+        <h2>Digiin kiinni</h2>
+        <p>Digilaitteiden kierrätyksellä</p>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>Tietoa DiKistä</h1>
+      <p class="lead">
+        DiKi kehittää selkeitä ja turvallisempia digiratkaisuja erityisesti ihmisille,
+        joille tavallinen digimaailma on liian sekava, kuormittava tai riskialtis.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Selkeät käyttöliittymät</h3>
+        <p>
+          Rakennamme helppokäyttöisiä käyttöliittymiä eri alustoille ja eri tarkoituksiin.
+          Tavoitteena on riskien pienentäminen ja selkeä keskittyminen olennaiseen.
+          Tutustumiseen ja harjoitteluun voidaan rakentaa oma selkeä ympäristö.
+          Asiointiin voidaan rakentaa erillinen käyttöliittymä, jossa tärkeät palvelut
+          ovat helposti löydettävissä ja muu verkon käyttö on rajattu turvallisemmaksi.
+          Näin tutustuminen ja varsinainen asiointi voidaan erottaa toisistaan selkeästi.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Kierrätys ja käyttöön valmistelu</h3>
+        <p>
+          DiKi vastaanottaa laitelahjoituksia, kunnostaa laitteita ja valmistaa niitä
+          uuteen käyttöön. Ajatuksena on, että hyvä laite ei jää käyttämättä vain siksi,
+          että se on vanha tai sekava käyttää. Kun laite kunnostetaan, selkeytetään ja
+          sovitetaan oikeaan tarkoitukseen, siitä voi tulla monelle turvallinen ja hyödyllinen väline.
+          Kierrätys tukee samalla sekä ekologisuutta että sitä, että digiin pääsy olisi
+          mahdollinen yhä useammalle.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ennaltaehkäisevä digioppiminen</h3>
+        <p>
+          DiKin toiminnassa painottuu ongelmien ennaltaehkäisy. Tavoitteena on poistaa
+          digiongelmien juurisyitä jo etukäteen. Tätä tuetaan käytötarpeeseen sopivilla
+          laite- ja ohjelmistoratkaisuilla, pienryhmäkoulutuksella, rauhallisella etenemisellä
+          ja järjestöjen digikerhojen tukemisella. DiKi voi auttaa rakentamaan kerhoihin
+          sopivia toimintatapoja, kouluttaa ohjaajia ja tukea yhteisöllistä oppimista
+          ja moderointia.
+        </p>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html" class="back-button">Takaisin palveluihin</a>
+    </div>
+
+    <div class="footer">
+      DiKi – Digilaitteiden kierrätyksellä digi-in
+    </div>
+
+  </div>
+</body>
+</html>
